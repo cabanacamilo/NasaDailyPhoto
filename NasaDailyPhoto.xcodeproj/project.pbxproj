@@ -10,9 +10,13 @@
 		2F58EEE624E51F3500904F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EEE524E51F3500904F8F /* AppDelegate.swift */; };
 		2F58EEE824E51F3500904F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EEE724E51F3500904F8F /* SceneDelegate.swift */; };
 		2F58EEEA24E51F3500904F8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EEE924E51F3500904F8F /* ViewController.swift */; };
-		2F58EEED24E51F3500904F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58EEEB24E51F3500904F8F /* Main.storyboard */; };
 		2F58EEEF24E51F3B00904F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F58EEEE24E51F3B00904F8F /* Assets.xcassets */; };
 		2F58EEF224E51F3B00904F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58EEF024E51F3B00904F8F /* LaunchScreen.storyboard */; };
+		2F58EEFB24E51FDF00904F8F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EEFA24E51FDF00904F8F /* HomeView.swift */; };
+		2F58EEFE24E5239500904F8F /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EEFD24E5239500904F8F /* PhotoInfo.swift */; };
+		2F58EF0124E523F600904F8F /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EF0024E523F600904F8F /* URL+Helpers.swift */; };
+		2F58EF0424E524A100904F8F /* PhotoInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EF0324E524A100904F8F /* PhotoInfoService.swift */; };
+		2F58EF0624E52A1200904F8F /* UIImageView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58EF0524E52A1200904F8F /* UIImageView+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,14 @@
 		2F58EEE524E51F3500904F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F58EEE724E51F3500904F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2F58EEE924E51F3500904F8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F58EEEC24E51F3500904F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F58EEEE24E51F3B00904F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F58EEF124E51F3B00904F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F58EEF324E51F3B00904F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F58EEFA24E51FDF00904F8F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2F58EEFD24E5239500904F8F /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		2F58EF0024E523F600904F8F /* URL+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Helpers.swift"; sourceTree = "<group>"; };
+		2F58EF0324E524A100904F8F /* PhotoInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoService.swift; sourceTree = "<group>"; };
+		2F58EF0524E52A1200904F8F /* UIImageView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		2F58EEE424E51F3500904F8F /* NasaDailyPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				2F58EF0724E5431500904F8F /* Controllers */,
+				2F58EF0224E5248400904F8F /* Services */,
+				2F58EEFF24E523D600904F8F /* Helpers */,
+				2F58EEFC24E5238500904F8F /* Models */,
+				2F58EEF924E51FBE00904F8F /* Views */,
 				2F58EEE524E51F3500904F8F /* AppDelegate.swift */,
 				2F58EEE724E51F3500904F8F /* SceneDelegate.swift */,
-				2F58EEE924E51F3500904F8F /* ViewController.swift */,
-				2F58EEEB24E51F3500904F8F /* Main.storyboard */,
 				2F58EEEE24E51F3B00904F8F /* Assets.xcassets */,
 				2F58EEF024E51F3B00904F8F /* LaunchScreen.storyboard */,
 				2F58EEF324E51F3B00904F8F /* Info.plist */,
 			);
 			path = NasaDailyPhoto;
+			sourceTree = "<group>";
+		};
+		2F58EEF924E51FBE00904F8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F58EEFA24E51FDF00904F8F /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F58EEFC24E5238500904F8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F58EEFD24E5239500904F8F /* PhotoInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F58EEFF24E523D600904F8F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F58EF0024E523F600904F8F /* URL+Helpers.swift */,
+				2F58EF0524E52A1200904F8F /* UIImageView+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F58EF0224E5248400904F8F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F58EF0324E524A100904F8F /* PhotoInfoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F58EF0724E5431500904F8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F58EEE924E51F3500904F8F /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +179,6 @@
 			files = (
 				2F58EEF224E51F3B00904F8F /* LaunchScreen.storyboard in Resources */,
 				2F58EEEF24E51F3B00904F8F /* Assets.xcassets in Resources */,
-				2F58EEED24E51F3500904F8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +190,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F58EEEA24E51F3500904F8F /* ViewController.swift in Sources */,
+				2F58EF0124E523F600904F8F /* URL+Helpers.swift in Sources */,
+				2F58EEFB24E51FDF00904F8F /* HomeView.swift in Sources */,
+				2F58EF0424E524A100904F8F /* PhotoInfoService.swift in Sources */,
 				2F58EEE624E51F3500904F8F /* AppDelegate.swift in Sources */,
 				2F58EEE824E51F3500904F8F /* SceneDelegate.swift in Sources */,
+				2F58EF0624E52A1200904F8F /* UIImageView+Helpers.swift in Sources */,
+				2F58EEFE24E5239500904F8F /* PhotoInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2F58EEEB24E51F3500904F8F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F58EEEC24E51F3500904F8F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2F58EEF024E51F3B00904F8F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
